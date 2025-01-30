@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Account information</legend>
+        <label for="mail">Enter Email</label>
+        <input
+          type="email"
+          name="email"
+          id="mail"
+          placeholder="xyz@zmail.com"
+          required="true"
+        />
+        <label for="ps">password</label>
+        <input type="password" name="password" id="ps" placeholder="***" />
+
+        <button type="submit">Login</button>
+        <button>
+          <a href="https://www.facebook.com/" target="_blank"
+            >create an account</a
+          >
+        </button>
+      </fieldset>
+      <!--order list-->
+      <fieldset>
+        <legend>
+          lsit of countries where want to travel (orderList & nested list(i))
+        </legend>
+        <ol>
+          <li>Russia</li>
+          <li>Thailand</li>
+          <li>Japan</li>
+          <li>columbia</li>
+          <!--nested list-->
+          <ol type="i">
+            <li>America</li>
+            <li>China</li>
+            <li>India</li>
+            <li>Nepal</li>
+          </ol>
+        </ol>
+      </fieldset>
+
+      <fieldset>
+        <legend>list of countries where want to work (unorderd list)</legend>
+        <ul>
+          <li>India</li>
+          <li>France</li>
+          <li>Switzerland</li>
+          <li>Spain</li>
+        </ul>
+      </fieldset>
+      <!--radio button-->
+      <fieldset>
+        <legend>which asian country you most like</legend>
+        <label for="in">India</label>
+        <input type="radio" name="country" id="in" />
+        <label for="sri">Srilanka</label>
+        <input type="radio" name="country" id="sri" />
+        <label for="np">Nepal</label>
+        <input type="radio" name="country" id="np" />
+        <label for="th">Thailand</label>
+        <input type="radio" name="country" id="th" />
+      </fieldset>
+      <!--checkbox-->
+      <fieldset>
+        <legend>Which fruit you likes?</legend>
+        <label for="k">Kiwi</label>
+        <input type="checkbox" name="fruit" id="k" />
+        <label for="m">Mango</label>
+        <input type="checkbox" name="fruit" id="m" />
+        <label for="g">grape</label>
+        <input type="checkbox" name="fruit" id="g" />
+        <label for="a">Apple</label>
+        <input type="checkbox" name="fruit" id="a" />
+        <label for="all">All of these</label>
+        <input type="checkbox" name="fruit" id="all" />
+      </fieldset>
+      <fieldset>
+        <legend>List of countries</legend>
+        <label for="cty">country</label>
+        <select name="country" id="cty">
+          <option value="spain">Spain</option>
+          <option value="barcelona">Barcelona</option>
+          <option value="usa">usa</option>
+          <option value="india">india</option>
+          <option value="thailand">thailand</option>
+          <option value="nepal">nepal</option>
+          <option value="russia">russia</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Finish some instructions</legend>
+        <label for="term">I agree term and conditions</label>
+        <input type="checkbox" name="privacy" id="term" /><br />
+        <label for="news">join to newsletter</label>
+        <input type="checkbox" name="privacy" id="news" /><br />
+        <label>let us a message</label>
+        <textarea
+          name="comment"
+          maxlength="150"
+          placeholder="say us something"
+        ></textarea
+        ><br /><br />
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
